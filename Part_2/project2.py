@@ -1,6 +1,6 @@
 """
 PROJECT 2
-Refactor Polygon class to make calculated propetries lazy and refacter the 
+Refactor Polygon class to make calculated propetries lazy and refactor the 
 Polygons sequence type to be an iterator.
 """
 from numbers import Real
