@@ -25,6 +25,17 @@ class Stock:
                 close={self.close},\n\
                 volume={self.volume})'
 
+    def as_dict(self):
+        return dict(symbol=self.symbol,
+                    date=self.date,
+                    open=self.open,
+                    high=self.high,
+                    low=self.low,
+                    close=self.close,
+                    volume=self.volume)
+
+    def __eq__(self, other):
+        return isinstance(other,Stock) and self.as_dict()==other.as_dict()
 
 class Trade:
     def __init__(self, symbol, timestamp, order, price, volume, commission):
@@ -42,6 +53,17 @@ class Trade:
             price={self.price},\n\
             commission={self.commission},\n\
             volume={self.volume})'
+
+    def as_dict(self):
+        return dict(symbol=self.symbol,
+                    timestamp=self.timestamp,
+                    order=self.order,
+                    price=self.price,
+                    volume=self.volume,
+                    commission=self.commission)
+
+    def __eq__(self, other):
+        return isinstance(other,Trade) and self.as_dict()==other.as_dict()
 
 
 # Marshmallow Schemas
@@ -105,3 +127,4 @@ activity_serialised = market_schema.dumps(activity)
 activity_deserialised = MarketSchema().loads(activity_serialised)
 
 print(activity_deserialised)
+print(activity==activity_deserialised)
