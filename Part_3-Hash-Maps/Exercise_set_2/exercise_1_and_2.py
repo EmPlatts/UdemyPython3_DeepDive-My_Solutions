@@ -33,7 +33,6 @@ decoder that can deserialize a JSON structure containing Stock and Trade objects
 from datetime import date, datetime
 from decimal import Decimal
 import json
-import re
 
 class Stock:
     def __init__(self, symbol, date_, open_, high, low, close, volume):
