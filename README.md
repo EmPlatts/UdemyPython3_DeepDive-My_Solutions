@@ -1,4 +1,4 @@
-## My Solutions for Udemy Python 3: Deep Dive
+## Solutions for Udemy Python 3: Deep Dive
  My solutions to projects and exercises in the Udemy Python 3: Deep Dive course by Fred Baptiste.<br/>
  Exercises and projects were only introduced in Part 2.
  
