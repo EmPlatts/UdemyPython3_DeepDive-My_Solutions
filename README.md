@@ -3,7 +3,7 @@
  There is nothing useful in this repository---just keeping a public record of what I've been working on.<br/>
  Exercises and projects were only introduced in Part 2. 
  
- See [Fred's directory](https://github.com/fbaptiste/python-deepdive) for details.
+ See [Fred Baptiste's directory](https://github.com/fbaptiste/python-deepdive) for the official solutions.
  
  Available at:<br/>
  https://www.udemy.com/course/python-3-deep-dive-part-1/<br/>
